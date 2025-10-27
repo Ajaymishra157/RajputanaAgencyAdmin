@@ -20,6 +20,7 @@ import NotificationScreen from '../Screens/NotificationScreen';
 import informationScreen from '../Screens/informationScreen';
 import WebviewScreen from '../Screens/WebviewScreen';
 import FinanceList from '../Screens/FinanceList';
+import AppSetting from '../Screens/AppSetting';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -107,7 +108,7 @@ const RouteNavigation = () => {
         <Stack.Screen name='informationScreen' component={informationScreen} options={{ headerShown: false }} />
         <Stack.Screen name='WebviewScreen' component={WebviewScreen} options={{ headerShown: false }} />
         <Stack.Screen name='FinanceList' component={FinanceList} options={{ headerShown: false }} />
-
+        <Stack.Screen name='AppSetting' component={AppSetting} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

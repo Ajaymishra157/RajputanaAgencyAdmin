@@ -285,7 +285,6 @@ const DashboardScreen = () => {
           gap: 25
         }}>
         {/* Four Box (Search History) */}
-
         <TouchableOpacity
           style={{
             alignItems: 'center',
@@ -331,6 +330,7 @@ const DashboardScreen = () => {
             Search History
           </Text>
         </TouchableOpacity>
+
         <TouchableOpacity
           style={{
             alignItems: 'center',
@@ -379,6 +379,54 @@ const DashboardScreen = () => {
 
 
 
+        <TouchableOpacity
+          style={{
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: 'white',
+            borderRadius: 15,
+            width: 100,
+            height: 120,
+            padding: 10,
+            shadowColor: '#000',
+            shadowOffset: { width: 0, height: 4 },
+            shadowOpacity: 0.1,
+            shadowRadius: 6,
+            elevation: 8, // For Android
+          }}
+          onPress={() => {
+            navigation.navigate('AppSetting');
+          }}
+        >
+          <View
+            style={{
+              width: 50,
+              height: 50,
+              borderRadius: 30,
+              backgroundColor: colors.Brown,
+              justifyContent: 'center',
+              alignItems: 'center',
+              marginBottom: 10,
+              borderWidth: 1,
+              // Royal Blue
+            }}
+          >
+            <Image source={require('../assets/images/settings.png')} style={{ width: 24, height: 24, tintColor: 'white' }} />
+
+          </View>
+          <Text
+            style={{
+              color: 'black',
+              fontSize: 12,
+              textAlign: 'center',
+              fontFamily: 'Inter-Medium',
+            }}
+          >
+            App Settings
+          </Text>
+        </TouchableOpacity>
+
+
       </View>
       <View
         style={{
@@ -398,7 +446,7 @@ const DashboardScreen = () => {
         <View style={{ width: '10%', justifyContent: 'center', alignItems: 'center' }}>
           <Image
             source={require('../assets/images/git.png')}
-            style={{ width: 20, height: 20 }}
+            style={{ width: 20, height: 20, tintColor: colors.Brown }}
           />
         </View>
 

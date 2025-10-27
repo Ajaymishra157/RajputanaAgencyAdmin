@@ -30,6 +30,8 @@ export const ENDPOINTS = {
   Staff_Account_Status: `${BASE_URL}staff_account_status.php`,
   search_history_paginate: `${BASE_URL}search_history_paginate.php`,
   search_history_search: `${BASE_URL}search_history_search.php`,
+  app_setting_time: `${BASE_URL}app_setting_time.php`,
+  update_time_setting: `${BASE_URL}update_time_setting.php`,
 
   Finance_List: (rentAgencyId, staff_id) =>
     `${BASE_URL}finance_list.php?rent_agency_id=${rentAgencyId}&staff_id=${staff_id}`,
